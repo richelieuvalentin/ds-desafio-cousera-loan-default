@@ -1,0 +1,19 @@
+﻿Column_name,Column_type,Data_type,Description
+LoanID,Identifier,string,Um identificador único para cada empréstimo.
+Age,Feature,integer,A idade do tomador do empréstimo.
+Income,Feature,integer,A renda anual do tomador do empréstimo.
+LoanAmount,Feature,integer,O valor de dinheiro emprestado.
+CreditScore,Feature,integer,"A pontuação de crédito do tomador, indicando sua capacidade de crédito."
+MonthsEmployed,Feature,integer,O número de meses em que o tomador esteve empregado.
+NumCreditLines,Feature,integer,O número de linhas de crédito que o tomador possui.
+InterestRate,Feature,float,A taxa de juros do empréstimo.
+LoanTerm,Feature,integer,O prazo do empréstimo em meses.
+DTIRatio,Feature,float,"A relação dívida/renda, indicando a dívida do tomador em comparação com sua renda."
+Education,Feature,string,"O maior nível de escolaridade alcançado pelo tomador (Doutorado, Mestrado, Bacharelado, Ensino Médio)."
+EmploymentType,Feature,string,"O tipo de vínculo empregatício do tomador (Tempo integral, Meio período, Autônomo, Desempregado)."
+MaritalStatus,Feature,string,"O estado civil do tomador (Solteiro, Casado, Divorciado)."
+HasMortgage,Feature,string,Se o tomador possui hipoteca/financiamento imobiliário (Sim ou Não).
+HasDependents,Feature,string,Se o tomador possui dependentes (Sim ou Não).
+LoanPurpose,Feature,string,"A finalidade do empréstimo (Casa, Automóvel, Educação, Negócios, Outro)."
+HasCoSigner,Feature,string,Se o empréstimo possui um coassinante/fiador (Sim ou Não).
+Default,Target,integer,A variável alvo binária que indica se houve inadimplência no empréstimo (1) ou não (0).
