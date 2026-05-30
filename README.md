@@ -96,7 +96,7 @@ Analisamos o impacto das features através dos pesos do modelo L1 e avaliamos as
 
 ---
 
-## 🛠️ Como Executar o Projeto
+## Como Executar o Projeto
 
 1. Instale as dependências:
    ```bash
