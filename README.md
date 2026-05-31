@@ -52,8 +52,6 @@ O objetivo do projeto é prever a probabilidade de inadimplência de um cliente 
 
 ### 2. Entendimento dos Dados (Data Understanding - EDA)
 
-Realizamos análises de dados abrangentes e geramos representações gráficas completas:
-
 * **Análise Univariada:** Histogramas de distribuição das variáveis contínuas, mostrando comportamentos predominantemente uniformes no dataset sintético.
 * **Análise Bivariada Básica:** Boxplots relacionando variáveis numéricas com inadimplência e taxas médias de default para variáveis categóricas (demonstrando que a presença de fiador - `HasCoSigner` - reduz o default pela metade).
 * **Gráficos de Área e Densidade (KDE):** Curvas de densidade sobrepostas ilustrando que inadimplentes se concentram em faixas de taxa de juros superiores a 15%, acompanhadas de gráficos de área empilhada por decil.
@@ -62,7 +60,7 @@ Realizamos análises de dados abrangentes e geramos representações gráficas c
 
 ### 3. Preparação dos Dados (Data Preparation)
 
-Criamos a classe `EngenheiroFeatures` (no arquivo [engenharia_variaveis.py](src/engenharia_variaveis.py)) que calcula de forma vetorizada **20 variáveis financeiras e comportamentais derivadas**, incluindo:
+Criação da classe `EngenheiroFeatures` (no arquivo [engenharia_variaveis.py](src/engenharia_variaveis.py)) que calcula de forma vetorizada **20 variáveis financeiras e comportamentais derivadas**, incluindo:
 
 1. **Comprometimento Financeiro:** Parcela estimada pela Amortização Francesa (Price) dividida pela Renda (`PaymentToIncomeRatio`), comprometimento total de renda (`TotalDebtServiceToIncome`) e renda mensal disponível (`DisposableIncome`).
 2. **Razões e Proporções:** Tempo de emprego em relação à idade (`EmploymentToAgeRatio`), juros divididos pelo score (`RiskScoreMultiplier`) e renda/empréstimo por linhas ativas.
@@ -79,9 +77,6 @@ Utilizamos a biblioteca `scikit-learn` para estruturar pipelines completos, inte
 * **LightGBM:** ROC AUC local de **0.75237**
 * **XGBoost:** ROC AUC local de **0.73965**
 
-**Estratégia de Ensemble (Blending):**
-Devido à natureza linear do dataset sintético do desafio, os modelos lineares superaram as árvores de decisão. Construímos um ensemble via **Blending** ponderado das probabilidades preditas: 
-$$\text{Probabilidade Final} = 0.7 \times \text{Prob(LR L1)} + 0.3 \times \text{Prob(LR L2)}$$
 
 ### 5. Avaliação (Evaluation)
 
