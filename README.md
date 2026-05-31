@@ -88,7 +88,10 @@ $$\text{Probabilidade Final} = 0.7 \times \text{Prob(LR L1)} + 0.3 \times \text{
 Analisamos o impacto das features através dos pesos do modelo L1 e avaliamos as curvas de desempenho no conjunto completo de treinamento:
 
 * **Coeficientes L1:** Identificação da taxa de juros (`InterestRate`), score de crédito (`CreditScore`) e cobertura de renda (`DisposableIncomeToInstallment`) como os principais drives de decisão.
-* **Curvas de Desempenho:** Geração das curvas ROC e Precision-Recall.
+* **Curvas de Desempenho (Curva ROC e Precision-Recall):** Geração das curvas de discriminação e calibração do modelo final.
+
+![Curvas de Avaliação de Modelos (ROC e Precision-Recall)](plots/curvas_avaliacao_modelos.png)
+
 
 ---
 
