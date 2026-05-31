@@ -4,7 +4,7 @@ Este repositório contém a solução completa para o desafio de ciência de dad
 
 ---
 
-## 🏆 Resultados Alcançados na Plataforma
+##  Resultados Alcançados na Plataforma
 
 O modelo final foi submetido ao avaliador automático do Coursera, alcançando os seguintes resultados:
 
@@ -12,14 +12,13 @@ O modelo final foi submetido ao avaliador automático do Coursera, alcançando o
 * **Classificação no Ranking Geral:** Top 16% (superando **84% dos colegas**)
 * **Status:** Aprovado com sucesso
 
-### 📊 Telas da Plataforma (Submissão e Ranking)
+### Telas da Plataforma (Submissão e Ranking)
 
 Abaixo estão os registros visuais do desempenho e posição no ranking obtidos no Coursera:
 
 | Visão Geral do Resultado | Detalhe da Nota (75% e ROC AUC) |
 |:---:|:---:|
-| ![Visão Geral da Nota](plots/resultado_submissao_geral.png) | ![Detalhe do Score](plots/resultado_submissao_detalhe.png) |
-
+| ![Visão Geral da Nota](plots/resultado_submissao_geral.png) | 
 
 ---
 
@@ -46,7 +45,7 @@ O projeto está organizado da seguinte forma:
 
 ---
 
-## 🔄 Abordagem Metodológica (CRISP-DM)
+## Abordagem Metodológica (CRISP-DM)
 
 ### 1. Entendimento do Negócio (Business Understanding)
 O objetivo do projeto é prever a probabilidade de inadimplência de um cliente (`Default`). Estimativas precisas auxiliam a instituição a otimizar a concessão de crédito, balanceando o custo de inadimplência (Falsos Negativos) com a receita potencial perdida por rejeitar bons pagadores (Falsos Positivos). A métrica principal de avaliação técnica é o **ROC AUC**.
