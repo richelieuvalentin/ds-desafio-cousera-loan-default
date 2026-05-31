@@ -20,9 +20,6 @@ Abaixo estão os registros visuais do desempenho e posição no ranking obtidos 
 |:---:|:---:|
 | ![Visão Geral da Nota](plots/resultado_submissao_geral.png) | ![Detalhe do Score](plots/resultado_submissao_detalhe.png) |
 
-| Posição no Ranking Oficial | Lista do Leaderboard (Top 16%) |
-|:---:|:---:|
-| ![Posição no Ranking](plots/ranking_coursera_posicao.png) | ![Lista de Colegas](plots/ranking_coursera_lista.png) |
 
 ---
 
