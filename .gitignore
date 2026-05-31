@@ -16,8 +16,6 @@ env/
 .idea/
 
 # Project Specific Large Files
-data/train.csv
-data/test.csv
 notebooks/train_df
 prediction_submission.csv
 models/*.pkl
