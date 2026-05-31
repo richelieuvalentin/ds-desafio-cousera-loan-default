@@ -16,7 +16,7 @@ O modelo final foi submetido ao avaliador automático do Coursera, alcançando o
 
 Abaixo estão os registros visuais do desempenho e posição no ranking obtidos no Coursera:
 
-| Visão Geral do Resultado | Detalhe da Nota (75% e ROC AUC) |
+
 |:---:|:---:|
 | ![Visão Geral da Nota](plots/resultado_submissao_geral.png) | 
 
